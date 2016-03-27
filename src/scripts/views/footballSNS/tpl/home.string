@@ -1,0 +1,42 @@
+<section class="m-home">
+	<header>
+		<input type="text"/>
+		<select class="m-header">
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="广州">广州</option>
+			<option value="杭州">杭州</option>
+		</select>
+		<input type="button"/>
+	</header>
+	<div qapp-widget="scroll">
+		<div class="box">
+			<div class=" swiper-containe">
+		    	<div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="/guest/images/pic1.jpg" /></div>
+			        <div class="swiper-slide"><img src="/guest/images/pic2.jpg" /></div>
+			        <div class="swiper-slide"><img src="/guest/images/pic3.jpg" /></div>
+		    	</div>
+		    </div>
+	    	<ul class="nav">
+	    		<li><img src="/guest/images/login_weixin.png"><p>周末放风</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>长线探秘</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>挑战巅峰</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>免费畅玩</p></li>
+	    	</ul>
+	    	<ul class="nav nav-m">
+	    		<li><img src="/guest/images/login_weixin.png"><p>攀登高峰</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>徒步天下</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>休闲酷玩</p></li>
+	    		<li><img src="/guest/images/login_weixin.png"><p>摄影之旅</p></li>
+	    	</ul>
+			<div class="main">
+				<h3>推荐活动</h3>
+				<div class="main-pic">
+					<img src="/guest/images/main2.jpg">
+					<p>3月26日一起去西藏</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

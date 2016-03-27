@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.m-home {
+	@include flexbox(flex);
+	@include flex-direction(column);
+	height:auto;
+	overflow:hidden;
+	header {
+		height: 0.44rem;
+		width:100%;
+		background: #fff;
+		position:relative;
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		input{
+		display:none;
+		}
+		input[type="button"]{
+			display:block;
+			width:0.4rem;
+			height:0.4rem;
+			position:absolute;
+			right:0px;
+		}
+		}
+
+	> div {
+		height:10rem;
+		width: 100% !important;
+		@include flex(1);
+		background:#ccc;
+		@include box-sizing(border-box);
+		position: relative;
+		.box {
+			cursor: pointer;
+			.swiper-containe{
+				height:1.6rem;
+				width:300%;
+				background:#fff;
+				img{
+				width:33.3%;
+				height:1.6rem;
+			}
+			}
+			.nav{
+			 	@include flexbox(flex);
+			 	@include flex-direction(row);
+			 	height:1rem;
+			 	background:#fff;
+			 	padding-bottom:0.2rem;
+			 	li{
+			 		display:block;
+			 		@include flex(1);
+			 		margin-top:0.2rem;
+			 		img{
+			 			display:block;
+			 			width:0.6rem;
+			 			height:0.6rem;
+			 			margin:0 auto;
+			 		}
+			 		p{
+			 			text-align:center;
+			 		}
+			 	}
+			}
+			.nav-m{
+					li{
+						margin:0.2rem 0;
+					}
+			}		
+			.main{
+				width:100%;
+				height:auto;
+				background:#fff;
+				box-sizing:border-box;
+				margin-top:0.1rem;
+				padding:0 0.1rem;
+				h3{
+					text-align:center;
+					font-family:"宋体";
+					font-weight:100;
+					padding:0.1rem 0;
+				}
+				.main-pic{
+					width:100%;
+					position:relative;
+					img{
+						display:block;
+						width:100%;
+						border:0;
+					}
+					p{
+						color:white;
+						position:absolute;
+						bottom:0;
+						opacity:0.5;
+						width:100%;
+						text-align:center;
+						background:black;
+					}
+				}
+			}
+			.pic {
+				@include prefix(column-count, 2);
+				@include prefix(column-gap, 0.08rem);
+				margin-bottom: .5rem;
+				>div {
+					padding-bottom: .08rem;
+					@include prefix(column-break-inside, avoid);
+					span {
+						display: block;
+						width: 100%;
+						@include border($border-width: 1px, $border-color: #e5e5e5);
+						img {
+							width: 100%;
+						}
+						i {
+							padding: .08rem 0.1rem;
+							font-size: .14rem;
+							display: block;
+							@include border($border-width: 1px 0 0 0, $border-color: #e5e5e5);
+						}
+					}
+				}
+			}
+		}
+	}
+}
