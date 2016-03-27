@@ -5,4 +5,6 @@
         <div class="swiper-slide" action-type="tap.alert"><img src="/guest/images/slide3.jpg" /></div>
         <div class="swiper-slide" action-type="tap.gotoIndex"><img src="/guest/images/slide4.jpg"/></div>
     </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination first-guide"></div>
 </div>

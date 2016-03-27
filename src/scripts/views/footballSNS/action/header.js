@@ -11,7 +11,7 @@ QApp.defineView('header',{
 	},
 	bindEvents: {
 		'beforeShow': function() {
-
+			
 		}
 	}
 });

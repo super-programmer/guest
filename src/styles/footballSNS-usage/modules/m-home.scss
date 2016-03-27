@@ -14,7 +14,11 @@
 		@include align-items(center);
 		@include justify-content(center);
 		input{
-		display:none;
+			display:none;
+		}
+		select{
+			border:0;
+			background:#fff;
 		}
 		input[type="button"]{
 			display:block;
@@ -22,6 +26,9 @@
 			height:0.4rem;
 			position:absolute;
 			right:0px;
+			border:0;
+			background:url(/guest/images/search.png) no-repeat 0.15rem 0.01rem;
+			background-size:50% 50%;
 		}
 		}
 

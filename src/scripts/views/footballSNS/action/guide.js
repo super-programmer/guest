@@ -19,7 +19,9 @@ QApp.defineView('guide', {
 		'beforeShow': function() {
 			var mySwiper = new Swiper('.swiper-container', {
 				direction: 'horizontal',
-				loop: false
+				loop: false,
+				  // 如果需要分页器
+    			pagination: '.swiper-pagination'
 			});
 		}
 	}
