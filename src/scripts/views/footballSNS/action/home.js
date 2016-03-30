@@ -27,15 +27,22 @@ QApp.defineView('home', {
 
 	bindEvents: {
 		'beforeShow': function() {
-			/*var self = this;
+			var self = this;
 			self.vm = this.getVM();
+			// console.info(utilAjax.query)
 			utilAjax.query({
 				url: "/interface/getList.do",
 				success: function(rs){
 					// alert();
+					console.info(rs.data)
 					self.vm.list = rs.data;
+				},
+				error:function(rs){
+					// console.info(rs)
+					self.vm.list = rs.data;
+					console.info(rs.data)
 				}
-			});*/
+			});
 			var mySwiper = new Swiper('.swiper-containe', {
 				direction: 'horizontal',
 				loop:true,

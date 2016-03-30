@@ -11,7 +11,7 @@
 	</header>
 	<div qapp-widget="scroll">
 		<div class="box">
-			<div class=" swiper-containe">
+			<div class="swiper-containe">
 		    	<div class="swiper-wrapper">
 			        <div class="swiper-slide"><img src="/guest/images/pic1.jpg" /></div>
 			        <div class="swiper-slide"><img src="/guest/images/pic2.jpg" /></div>
@@ -32,9 +32,9 @@
 	    	</ul>
 			<div class="main">
 				<h3>推荐活动</h3>
-				<div class="main-pic">
-					<img src="/guest/images/main2.jpg">
-					<p>3月26日一起去西藏</p>
+				<div class="main-pic" ms-repeat-item="list">
+					<img ms-src="item.imgSrc">
+					<p ms-html="item.title"></p>
 				</div>
 			</div>
 		</div>

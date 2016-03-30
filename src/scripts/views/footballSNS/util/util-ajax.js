@@ -10,8 +10,7 @@ var utilAjax = {
             } else {
                 paramObj.error && paramObj.error(rs);
             }
-        }).fail(function(rs) {
-            //todo
+        }).fail(function(rs) {  
         });
     },
 }
